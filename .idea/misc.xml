@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/drawable-anydpi/ic_action_back.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/drawable-anydpi/ic_action_lock.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/drawable-anydpi/ic_action_next.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/drawable-anydpi/ic_action_settings.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/drawable-anydpi/ic_action_switch.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/drawable/seekbar_progress.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/drawable/seekbar_progressbar_style.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/drawable/seekbar_thumb.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/drawable/seekbar_track.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/layout/dialog_changeappicon.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/layout/dialog_rating.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/layout/dialog_settings.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/layout/fragment_becomepremium.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/layout/fragment_novibrations.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/layout/fragment_pattern.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/layout/fragment_patternlist.xml" value="0.15" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/layout/fragment_sendfeedback.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/layout/fragment_settings.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/layout/fragment_vibration.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Vibrator/app/src/main/res/layout/rv_pattern.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15_PREVIEW" project-jdk-name="15" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

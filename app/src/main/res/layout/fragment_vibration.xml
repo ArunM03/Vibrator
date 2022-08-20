@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroun_bg1">
+
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mwhCloseColor="@color/secondary_color"
+        app:mwhIsRunning="true"
+        app:mwhVelocity="10"
+        android:visibility="gone"
+        app:mwhStartColor="@color/main_color"
+        app:mwhWaveHeight="60dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="16dp"
+        android:src="@drawable/ic_action_settings"
+        app:tint="@color/main_color"
+        android:background="@android:color/transparent"
+        android:id="@+id/ib_settings"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        android:src="@drawable/ic_action_lock"
+        app:tint="@color/main_color"
+        android:background="@android:color/transparent"
+        android:id="@+id/ib_lock"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cd_switch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33">
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ct_switch"
+            android:background="@color/secondary_color">
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="24dp"
+                android:src="@drawable/ic_action_switch"
+                android:id="@+id/iv_switch"
+                app:tint="@color/main_color"/>
+            
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintTop_toBottomOf="@id/cd_switch"
+        android:layout_marginTop="24dp"
+        android:id="@+id/cd_speed">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/secondary_color">
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                app:layout_constraintWidth_percent="0.7"
+                android:progressTint="@color/main_color"
+                android:max="5"
+                android:progress="1"
+                android:id="@+id/sb_speed"
+                android:thumb="@drawable/seekbar_thumb"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/sb_speed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="1"
+                android:textSize="24sp"
+                android:id="@+id/tv_speed"
+                android:textStyle="bold"
+                android:textColor="@color/main_color"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintTop_toBottomOf="@id/cd_speed"
+        android:layout_marginTop="24dp"
+        android:id="@+id/cd_pattern">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/secondary_color">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="Heartbeat"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="20sp"
+                app:layout_constraintWidth_percent="0.7"
+                android:layout_marginStart="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter_regular"
+                android:id="@+id/tv_pattername"
+                android:textColor="@color/main_color"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_pattername"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:tint="@color/main_color"
+                android:src="@drawable/ic_action_next"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cd_pattern"
+        android:layout_marginTop="24dp"
+        android:text="No Vibration ?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/black"
+        android:id="@+id/tv_novibration"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_novibration"
+        android:layout_marginTop="24dp"
+        android:text="@string/send_feedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/main_color"
+        android:id="@+id/tv_sendfeedback"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ct_lock"
+        android:elevation="12dp"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/black_lock">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardElevation="8dp"
+            android:id="@+id/cd_unlock"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardCornerRadius="35dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/unlock"
+                android:layout_margin="16dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cd_unlock"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Press to Unlock"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

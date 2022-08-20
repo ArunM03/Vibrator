@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "683354483495",
+    "project_id": "health-apps-b91c1",
+    "storage_bucket": "health-apps-b91c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683354483495:android:35106432cf68a8d9c99702",
+        "android_client_info": {
+          "package_name": "com.health.android.vibrator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683354483495-rb46vjs6umaenm6icla67u58f7ea8rbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9h7-X3ziS7UGrrvlTkPakl124rq157jg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683354483495-rb46vjs6umaenm6icla67u58f7ea8rbc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroun_bg1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="16dp"
+        android:id="@+id/ib_back"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unlock All Patterns"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/inter_bold"
+        android:id="@+id/tv_becomepremium"
+        app:layout_constraintStart_toEndOf="@id/ib_back"
+        app:layout_constraintTop_toTopOf="@id/ib_back"
+        app:layout_constraintBottom_toBottomOf="@id/ib_back"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enjoy all the patterns with ad free"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/inter_regular"
+        android:id="@+id/tv_tips"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_back"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIBRATOR PREMIUM"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/tv_vibratorpremium"
+        android:fontFamily="@font/inter_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tips"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="One-time purchase"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_regular"
+        android:id="@+id/tv_onetimepurchase"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_vibratorpremium"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:indeterminate="true"
+        android:visibility="visible"
+        android:id="@+id/progressbar"
+        app:layout_constraintTop_toBottomOf="@id/tv_onetimepurchase"/>
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="$300"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="@font/inter_bold"
+        android:id="@+id/tv_price"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_onetimepurchase"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE 70%"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:padding="4dp"
+        android:fontFamily="@font/inter_bold"
+        android:id="@+id/tv_offer"
+        android:background="@color/purple_500"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_price"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="tv_actualprice"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_regular"
+        android:id="@+id/tv_actualprice"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/tv_offer"
+        app:layout_constraintTop_toTopOf="@id/tv_offer"
+        app:layout_constraintBottom_toBottomOf="@id/tv_offer"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Features"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_regular"
+        android:id="@+id/tv_features"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_offer"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_unlockallpatterns"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/inter_bold"
+        android:layout_marginEnd="16dp"
+        android:text="=> Unlock All Premium Patterns"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/tv_features"
+        app:layout_constraintTop_toBottomOf="@id/tv_features" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="=> Ads Free"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/inter_bold"
+        android:id="@+id/tv_adsfree"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/tv_features"
+        app:layout_constraintTop_toBottomOf="@id/tv_unlockallpatterns" />
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_adsfree"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/fab_unlockallpatterns"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/purple_500"
+        android:text="Unlock All Patterns"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Feedback"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/inter_regular"
+        android:id="@+id/tv_sendfeedback"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fab_unlockallpatterns"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

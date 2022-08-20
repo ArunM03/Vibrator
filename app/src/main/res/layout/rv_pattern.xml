@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@id/cd_pattern"
+        app:layout_constraintStart_toEndOf="@id/cd_pattern"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/iv_premium"
+        android:visibility="gone"
+        app:tint="@color/gold_color"
+        android:src="@drawable/premiumicon"
+        android:elevation="10dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:id="@+id/cd_pattern"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ct_pattern"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/secondary_color">
+
+            <ImageView
+                android:id="@+id/iv_pattern"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:src="@drawable/dinosaur" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cd_pattern"
+        android:text="Dino"
+        android:textStyle="bold"
+        android:fontFamily="@font/inter_regular"
+        android:id="@+id/tv_patternname"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/main_color"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Diary</string>
+
+    <string name="send_feedback"><u>Send Feedback</u></string>
+
+
+    <string name="admob_test_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="main_interstitialad_test_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="admob_real_id">ca-app-pub-9734976142500353~5007960420</string>
+    <string name="main_interstitialad_real_id">ca-app-pub-9734976142500353/1068715418</string>
+</resources>

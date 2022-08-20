@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.health.android.vibrator.ui.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_noVibrationFragment"
+            app:destination="@id/noVibrationFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_sendFeedbackFragment"
+            app:destination="@id/sendFeedbackFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_becomePremiumFragment"
+            app:destination="@id/becomePremiumFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noVibrationFragment"
+        android:name="com.health.android.vibrator.ui.fragments.others.NoVibrationFragment"
+        android:label="NoVibrationFragment" />
+    <fragment
+        android:id="@+id/sendFeedbackFragment"
+        android:name="com.health.android.vibrator.ui.fragments.others.SendFeedbackFragment"
+        android:label="SendFeedbackFragment" />
+    <fragment
+        android:id="@+id/becomePremiumFragment"
+        android:name="com.health.android.vibrator.ui.fragments.others.BecomePremiumFragment"
+        android:label="BecomePremiumFragment" />
+    <fragment
+        android:id="@+id/patternFragment"
+        android:name="com.health.android.vibrator.ui.fragments.PatternFragment"
+        android:label="PatternFragment" >
+        <action
+            android:id="@+id/action_patternFragment_to_becomePremiumFragment"
+            app:destination="@id/becomePremiumFragment" />
+    </fragment>
+</navigation>
