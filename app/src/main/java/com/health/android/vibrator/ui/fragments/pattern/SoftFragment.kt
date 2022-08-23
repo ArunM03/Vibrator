@@ -48,16 +48,18 @@ class SoftFragment(val type : String = "Soft") : Fragment(R.layout.fragment_patt
         }
 
         patternAdapter.setOnItemClickListener {
-            if (it.isPremium && !sharedPref.getPremiumStatus()){
-                Navigation.findNavController(requireActivity(),R.id.nav_host_fragment_content_main).navigate(R.id.action_homeFragment_to_becomePremiumFragment)
-            }else{
-                sharedPref.setCurrentPattern(it.patternName)
-                Constants.selectedPattern = it.patternName
-                patternAdapter.notifyDataSetChanged()
-                if(sharedPref.getRunning()){
-                    (activity as MainActivity).startVibrator(sharedPref.getCurrentSpeed(),it.patternName)
-                }
-            }
+           // Navigation.findNavController(requireActivity(),R.id.nav_host_fragment_content_main).navigate(R.id.action_homeFragment_to_becomePremiumFragment)
+
+                   if (it.isPremium && !sharedPref.getPremiumStatus()){
+                        Navigation.findNavController(requireActivity(),R.id.nav_host_fragment_content_main).navigate(R.id.action_homeFragment_to_becomePremiumFragment)
+                    }else{
+                        sharedPref.setCurrentPattern(it.patternName)
+                        Constants.selectedPattern = it.patternName
+                        patternAdapter.notifyDataSetChanged()
+                        if(sharedPref.getRunning()){
+                            (activity as MainActivity).startVibrator(sharedPref.getCurrentSpeed(),it.patternName)
+                        }
+                    }
         }
 
     }

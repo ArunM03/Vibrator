@@ -303,6 +303,7 @@ class MainActivity : AppCompatActivity() {
                     /*         withContext(Dispatchers.Main){
                                   Toast.makeText(this@MainActivity,"purchaseList empty ${purchasesResult.purchasesList}", Toast.LENGTH_SHORT).show()
                               }*/
+                            sharedPref.setPremiumStatus(false)
                         }
                         sharedPref.setPaymentSaveStatus(true)
                     }

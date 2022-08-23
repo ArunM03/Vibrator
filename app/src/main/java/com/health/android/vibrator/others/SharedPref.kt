@@ -59,10 +59,10 @@ class SharedPref(val context : Context) {
         }
     }
 
-    fun setPremiumStatus(){
+    fun setPremiumStatus(status : Boolean = true){
         editor.apply {
-            putBoolean(PREMIUMSTATUS,true)
-            putBoolean(PAYMENTSAVED,true)
+            putBoolean(PREMIUMSTATUS,status)
+            putBoolean(PAYMENTSAVED,status)
             apply()
         }
     }

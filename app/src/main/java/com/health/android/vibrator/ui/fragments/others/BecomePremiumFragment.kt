@@ -128,12 +128,13 @@ class BecomePremiumFragment : Fragment(R.layout.fragment_becomepremium) {
 
 
             withContext(Dispatchers.Main){
+              //  Toast.makeText(requireContext(), "$productDetails", Toast.LENGTH_LONG).show()
                 binding.progressbar.visibility = View.GONE
                 val formattedPrice = productDetails.oneTimePurchaseOfferDetails!!.formattedPrice
                 binding.tvPrice.text = formattedPrice
-                val acutalPrice = formattedPrice.substring(1).replace(",","").toFloat() * 3.33f
-                binding.tvActualprice.text = "Actual Price : ${formattedPrice[0]}$acutalPrice"
-                binding.tvActualprice.strike = true
+            //    val acutalPrice = formattedPrice.substring(1).replace(",","").toFloat() * 3.33f
+            //    binding.tvActualprice.text = "Actual Price : ${formattedPrice[0]}$acutalPrice"
+            //    binding.tvActualprice.strike = true
             }
 
             productDetailsForLaunchFlow = productDetails
